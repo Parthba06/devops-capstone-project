@@ -2,14 +2,17 @@
 
 ### cURL Command:
 ```
-curl -i -X DELETE http://localhost:8080/accounts/1
+curl -i -X DELETE http://127.0.0.1:5000/accounts \
+  -H "Content-Type: application/json" \
+  -d '{"name":"John Doe","email":"john@doe.com","address":"123 Main St.","phone_number":"555-1212"}'
 ```
 
 ### Output:
 ```
 HTTP/1.1 204 NO CONTENT
-Server: Werkzeug/2.3.7 Python/3.9.18
+Server: gunicorn
 Date: Thu, 30 Oct 2024 12:04:00 GMT
-Content-Type: text/html; charset=utf-8
 Connection: close
+Content-Type: application/json
+Content-Length: 128
 ```

@@ -1,10 +1,10 @@
-# Customer Accounts Microservice
+# DevOps Capstone Project
 
 [![Build Status](https://github.com/Parthba06/devops-capstone-project/actions/workflows/ci-build.yaml/badge.svg)](https://github.com/Parthba06/devops-capstone-project/actions/workflows/ci-build.yaml)
 
 ## Project Overview
 
-The **Customer Accounts Microservice** is a RESTful API service built with Python and Flask that manages customer account records. It provides full CRUD (Create, Read, Update, Delete) operations and is designed with modern DevOps practices including CI/CD pipelines, containerization with Docker, and deployment on Kubernetes.
+The **DevOps Capstone** project is a Customer Accounts Microservice — a RESTful API service built with Python and Flask that manages customer account records. It provides full CRUD (Create, Read, Update, Delete) operations and is designed with modern DevOps practices including CI/CD pipelines, containerization with Docker, and deployment on Kubernetes.
 
 ## Features
 
