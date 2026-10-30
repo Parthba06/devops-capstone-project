@@ -1,0 +1,41 @@
+## Task 23: Security Headers & CORS - nosetests Output
+
+### Command:
+```
+nosetests --with-spec --spec-color --with-coverage --cover-package=service
+```
+
+### Output:
+```
+Account Service Tests
+  it should Create a new Account ... ok
+  it should return 400 for a bad request ... ok
+  it should return 415 for unsupported media type ... ok
+  it should Read a single Account ... ok
+  it should return 404 for a non-existing account ... ok
+  it should List all Accounts ... ok
+  it should return an empty list when no accounts exist ... ok
+  it should Update an existing Account ... ok
+  it should return 404 when updating a non-existing account ... ok
+  it should Delete an Account ... ok
+  it should return 204 even for non-existing account (idempotent) ... ok
+  it should return security headers ... ok
+  it should return CORS headers ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 1.892s
+
+OK
+
+Name                    Stmts   Miss  Cover   Missing
+-----------------------------------------------------
+service/__init__.py        16      0   100%
+service/models.py          58      2    97%   89, 94
+service/routes.py          75      3    96%   122, 145, 178
+-----------------------------------------------------
+TOTAL                     149      5    97%
+```
+
+All 13 tests passed including:
+- Security headers test (X-Frame-Options, X-Content-Type-Options, Content-Security-Policy, Referrer-Policy)
+- CORS headers test (Access-Control-Allow-Origin)
