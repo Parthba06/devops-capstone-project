@@ -1,6 +1,6 @@
 # Customer Accounts Microservice
 
-[![Build Status](https://github.com/yourusername/devops-capstone-project/actions/workflows/ci-build.yaml/badge.svg)](https://github.com/yourusername/devops-capstone-project/actions/workflows/ci-build.yaml)
+[![Build Status](https://github.com/Parthba06/devops-capstone-project/actions/workflows/ci-build.yaml/badge.svg)](https://github.com/Parthba06/devops-capstone-project/actions/workflows/ci-build.yaml)
 
 ## Project Overview
 
